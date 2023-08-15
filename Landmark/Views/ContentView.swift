@@ -19,6 +19,7 @@ struct ContentView_Previews: PreviewProvider {
             ContentView()
                 .previewDevice(PreviewDevice(stringLiteral: device))
                 .previewDisplayName(device)
+                .environmentObject(ModelData())
         }
     }
 }

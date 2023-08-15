@@ -28,8 +28,8 @@ struct LandMarkRowView: View {
 }
 
 struct LandMarkRowView_Previews: PreviewProvider {
+    static var landMarks = ModelData().landMarks
     static var previews: some View {
-        
         Group {
             LandMarkRowView(landMark: landMarks[0])
             LandMarkRowView(landMark: landMarks[1])
